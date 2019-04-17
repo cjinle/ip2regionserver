@@ -12,6 +12,7 @@ import (
 
 type AppConf struct {
 	Listen string `json:listen`
+	Mode   string `json:mode`
 }
 
 func main() {
@@ -32,6 +33,9 @@ func main() {
 	}
 
 	r := gin.Default()
+	if cfg.Mode != "debug" {
+		gin.SetMode(gin.ReleaseMode)
+	}
 	r.GET("/query", func(c *gin.Context) {
 		ip := c.DefaultQuery("ip", "0.0.0.0")
 		ipInfo, err := region.MemorySearch(ip)
