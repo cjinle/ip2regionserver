@@ -18,7 +18,7 @@ func main() {
 	}
 	defer region.Close()
 
-	file, err := os.Open("/data/wwwroot/test/ip3.log")
+	file, err := os.Open("ip3.log")
 	if err != nil {
 		panic("ip data open err!")
 	}
