@@ -6,5 +6,6 @@ import (
 
 func main() {
 	// ip2regionserver.GinStart()
-	ip2regionserver.HttpStart()
+	// ip2regionserver.HttpStart()
+	ip2regionserver.TcpStart()
 }
