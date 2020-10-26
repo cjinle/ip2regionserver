@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	// ip2regionserver.GinStart()
-	// ip2regionserver.HttpStart()
-	ip2regionserver.TcpStart()
+	// ip2regionserver.GinListen()
+	// ip2regionserver.HttpListen()
+	ip2regionserver.TcpListen()
 }

@@ -13,7 +13,7 @@ type AppConf struct {
 	Mode   string `json:mode`
 }
 
-func HttpStart() {
+func HttpListen() {
 	defer region.Close()
 
 	s, err := ioutil.ReadFile("../conf/app.json")
@@ -43,7 +43,7 @@ func HttpStart() {
 	http.ListenAndServe(cfg.Listen, nil)
 }
 
-func GinStart() {
+func GinListen() {
 	defer region.Close()
 
 	s, err := ioutil.ReadFile("../conf/app.json")

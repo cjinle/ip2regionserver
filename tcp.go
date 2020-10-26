@@ -9,7 +9,7 @@ import (
 
 var ConnMap map[string]net.Conn
 
-func TcpStart() {
+func TcpListen() {
 	defer region.Close()
 
 	s, err := ioutil.ReadFile("../conf/app.json")
