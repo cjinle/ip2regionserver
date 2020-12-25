@@ -1,4 +1,4 @@
-module example.com/m
+module github.com/cjinle/ip2regionserver
 
 go 1.14
 
