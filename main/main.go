@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/cjinle/ip2regionserver"
+	"github.com/cjinle/test/ip2regionserver"
 )
 
 func main() {
